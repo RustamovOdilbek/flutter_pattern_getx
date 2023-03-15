@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_pattern_getx/pages/home_page.dart';
-import 'package:flutter_pattern_getx/pages/main_page.dart';
-import 'package:flutter_pattern_getx/service/bind_service.dart';
+import 'package:flutter_pattern_getx/pages/starter_page.dart';
 import 'package:flutter_pattern_getx/service/di_service.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:get/get_navigation/src/routes/get_route.dart';
 
 void main() async{
   await DIService.init();
@@ -22,7 +18,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: MainPage(),
+      home: StarterPage(),
       // initialBinding: BindService(),
       // getPages: [
       //   GetPage(

@@ -7,8 +7,8 @@ import '../model/post_model.dart';
 openAlertBox(Post post, BuildContext context) {
   var titleController = TextEditingController();
   var bodyController = TextEditingController();
-  titleController.text = post!.title!;
-  bodyController.text = post!.body!;
+  titleController.text = post.title!;
+  bodyController.text = post.body!;
   return showDialog(
       context: context,
       builder: (BuildContext context) {
